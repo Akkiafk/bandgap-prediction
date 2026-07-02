@@ -43,23 +43,6 @@ Features are scaled with `MinMaxScaler` before training. Models are evaluated wi
 
 Adding `gap_nosoc` as a feature substantially improved every model, confirming the paper's finding that it's a strong predictor of the true bandgap. **Gradient Boosting was the best-performing model overall, reaching R² = 0.987.**
 
-## Repository structure
-
-```
-.
-├── README.md
-├── requirements.txt
-├── data/
-│   ├── bostonvolume.csv      # 8-feature dataset
-│   └── dosfinal.csv          # 9-feature dataset (includes gap_nosoc)
-├── notebooks/
-│   ├── 01_bandgap_8features.ipynb
-│   └── 02_bandgap_9features.ipynb
-└── results/
-    ├── parity_plots_8features.png
-    └── parity_plots_9features.png
-```
-
 ## Setup & running
 
 ```bash
