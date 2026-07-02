@@ -1,6 +1,3 @@
-# bandgap-prediction
-Regeneration of results of the paper “Bandgap prediction of 2D materials using machine learning( doi - https://doi.org/10.1371/journal.pone.0255637 )”
-
 # Bandgap Prediction of 2D Materials using Machine Learning
 
 Reproduction of results from [*Bandgap prediction of 2D materials using machine learning*](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0255637) (PLOS ONE), as a course project. Four regression models are trained to predict the electronic bandgap of 2D materials from computed structural/electronic descriptors, using data derived from the C2DB (Computational 2D Materials Database).
@@ -42,6 +39,25 @@ Features are scaled with `MinMaxScaler` before training. Models are evaluated wi
 | MLP | 0.960 | 0.165 | 0.084 |
 
 Adding `gap_nosoc` as a feature substantially improved every model, confirming the paper's finding that it's a strong predictor of the true bandgap. **Gradient Boosting was the best-performing model overall, reaching R² = 0.987.**
+
+### Plots
+
+**8-feature model**
+
+Predicted vs. actual bandgap (parity plots), train and test sets:
+
+![Train parity plot - 8 features](results/train_parity_8features.png)
+![Test parity plot - 8 features](results/test_parity_8features.png)
+
+Percentage of test predictions within 0.1 eV / 0.1–0.2 eV / >0.2 eV of true bandgap:
+
+![Error buckets - 8 features](results/error_buckets_8features.png)
+
+**9-feature model (with `gap_nosoc`)**
+
+![Train parity plot - 9 features](results/train_parity_9features.png)
+![Test parity plot - 9 features](results/test_parity_9features.png)
+![Error buckets - 9 features](results/error_buckets_9features.png)
 
 ## Setup & running
 
