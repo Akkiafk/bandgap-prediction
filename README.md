@@ -76,6 +76,12 @@ Open either notebook in Jupyter or VS Code and run all cells. (Originally develo
 - Feature engineering's outsized impact here — a single additional physically-motivated feature (`gap_nosoc`) improved R² by ~0.08–0.22 across all models
 - Practical use of `GridSearchCV` for hyperparameter tuning and structured model comparison (error-bucket analysis, parity plots) beyond a single summary metric
 
+## Data source & license
+
+- Haastrup, S. et al. The Computational 2D Materials Database: High-Throughput Modeling and Discovery of Atomically Thin Crystals. 2D Materials, 5(4), 042002 (2018).
+- Gjerding, M.N. et al. Recent Progress of the Computational 2D Materials Database (C2DB). 2D Materials, 8(4), 044002 (2021).
+- Note that data is from C2DB, licensed under CC BY 4.0, with a link to https://c2db.fysik.dtu.dk
+
 ## Reference
 
 Original paper: [Bandgap prediction of 2D materials using machine learning, PLOS ONE](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0255637)
